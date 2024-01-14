@@ -4,7 +4,7 @@ import { TagComponent } from '../tag/tag.component';
 @Component({
   selector: 'app-tag-list',
   standalone: true,
-  imports: [NgFor, TagComponent],
+  imports: [TagComponent],
   templateUrl: './tag-list.component.html',
   styleUrl: './tag-list.component.css',
 })
