@@ -1,0 +1,14 @@
+:host {
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  background: #818a91;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  margin-bottom: 0.2rem;
+  margin-right: 3px;
+  font-size: 0.8rem;
+  padding-right: 0.6rem;
+  padding-left: 0.6rem;
+  border-radius: 10rem;
+}
