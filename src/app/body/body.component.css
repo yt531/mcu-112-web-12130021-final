@@ -8,6 +8,7 @@
   padding-left: 15px;
   padding-right: 15px;
   display: flex;
+  width: 1140px;
 }
 
 .container > div {
