@@ -1,15 +1,14 @@
 import { Component, HostBinding } from '@angular/core';
-
 import { TagListComponent } from '../tag-list/tag-list.component';
 
 @Component({
-  selector: 'app-article-preview',
+  selector: 'app-tag-sidebar',
   standalone: true,
   imports: [TagListComponent],
-  templateUrl: './article-preview.component.html',
-  styleUrl: './article-preview.component.css',
+  templateUrl: './tag-sidebar.component.html',
+  styleUrl: './tag-sidebar.component.css',
 })
-export class ArticlePreviewComponent {
-  @HostBinding('class') class = 'article-preview';
+export class TagSidebarComponent {
+  @HostBinding('class') class = 'tag-sidebar';
   tags = ['enim', 'repellat', 'est', 'eos'];
 }
