@@ -1,18 +1,22 @@
-import { Component, HostBinding } from '@angular/core';
+import { ArticleService } from './../services/article.service';
+import { Component, HostBinding, inject } from '@angular/core';
 
 import { Article } from '../model/article';
 import { ArticleListComponent } from '../article-list/article-list.component';
+import { AsyncPipe, JsonPipe } from '@angular/common';
 
 @Component({
   selector: 'app-article-preview',
   standalone: true,
-  imports: [ArticleListComponent],
+  imports: [AsyncPipe, JsonPipe, ArticleListComponent],
   templateUrl: './article-preview.component.html',
   styleUrl: './article-preview.component.css',
 })
 export class ArticlePreviewComponent {
+  private readonly articleService = inject(ArticleService);
+
   @HostBinding('class') class = 'article-preview';
-  tags = ['enim', 'repellat', 'est', 'eos'];
+  articles$ = this.articleService.getList();
   articles = [
     new Article({
       id: 1,
