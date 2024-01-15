@@ -1,10 +1,19 @@
 <nav>
   <a class="navbar-brand">conduit</a>
   <ul>
-    <li><a [routerLink]="['home']" routerLinkActive="active">Home</a></li>
+    <li>
+      <a [routerLink]="['home']" routerLinkActive="active">Home</a>
+    </li>
+    <li>
+      <a [routerLink]="['article', 'form']" routerLinkActive="active">
+        New Article
+      </a>
+    </li>
     <li>
       <a [routerLink]="['sign-in']" routerLinkActive="active">Sign in</a>
     </li>
-    <li><a [routerLink]="['sign-up']" routerLinkActive="active">Sign up</a></li>
+    <li>
+      <a [routerLink]="['sign-up']" routerLinkActive="active">Sign up</a>
+    </li>
   </ul>
 </nav>
