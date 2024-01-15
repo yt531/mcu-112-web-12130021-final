@@ -3,6 +3,13 @@
   margin-top: 1.5rem;
 }
 
+.article-tab {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1140px;
+}
+
 .container {
   margin: 0 auto;
   padding-left: 15px;
