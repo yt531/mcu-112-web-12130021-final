@@ -1,0 +1,81 @@
+:host {
+  display: block;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 0;
+}
+
+div.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.meta {
+  margin: 0 0 1rem;
+  display: flex;
+  align-items: center;
+}
+
+img {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  border-radius: 30px;
+}
+
+div.info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+
+a.author {
+  color: #5cb85c;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+span.date {
+  color: #bbb;
+  font-size: 0.8rem;
+}
+
+button {
+  border: 1px solid #5cb85c;
+  border-radius: 0.2rem;
+  padding: 0.25rem 0.5rem;
+  color: #5cb85c;
+  background-color: transparent;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+}
+
+div.content > h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 3px;
+}
+
+div.content > p {
+  font-weight: 300;
+  color: #999;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  line-height: 1.3rem;
+}
+
+div.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.footer > span {
+  color: #bbb;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
