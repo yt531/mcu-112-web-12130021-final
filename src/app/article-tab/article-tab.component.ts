@@ -1,13 +1,16 @@
 import { Component, HostBinding } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-article-tab',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './article-tab.component.html',
   styleUrl: './article-tab.component.css',
 })
 export class ArticleTabComponent {
+  selectedItem = 'global';
   @HostBinding('class') class = 'article-tab';
+  onSelect(target: 'user' | 'global'): void {
+    this.selectedItem = target;
+  }
 }
