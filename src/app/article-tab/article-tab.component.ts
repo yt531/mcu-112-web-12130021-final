@@ -1,4 +1,10 @@
-import { Component, HostBinding } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  HostBinding,
+  Input,
+  Output,
+} from '@angular/core';
 
 @Component({
   selector: 'app-article-tab',
@@ -8,9 +14,11 @@ import { Component, HostBinding } from '@angular/core';
   styleUrl: './article-tab.component.css',
 })
 export class ArticleTabComponent {
-  selectedItem = 'global';
+  @Input({ required: true }) selectedTab!: 'user' | 'global';
+  @Output() selectedTabChange = new EventEmitter<'user' | 'global'>();
   @HostBinding('class') class = 'article-tab';
   onSelect(target: 'user' | 'global'): void {
-    this.selectedItem = target;
+    this.selectedTab = target;
+    this.selectedTabChange.emit(target);
   }
 }

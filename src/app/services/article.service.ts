@@ -9,7 +9,8 @@ import { Article } from '../model/article';
 export class ArticleService {
   private readonly url = 'http://localhost:3000/articles';
   private readonly httpClient = inject(HttpClient);
-  getList(): Observable<Article[]> {
-    return this.httpClient.get<Article[]>(this.url);
+  getList(author?: string): Observable<Article[]> {
+    const url = author ? `${this.url}?author=${author}` : this.url;
+    return this.httpClient.get<Article[]>(url);
   }
 }
