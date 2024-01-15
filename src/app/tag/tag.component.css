@@ -1,8 +1,6 @@
 :host {
   display: inline-block;
   cursor: pointer;
-  color: #fff;
-  background: #818a91;
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
   margin-bottom: 0.2rem;
@@ -11,4 +9,14 @@
   padding-right: 0.6rem;
   padding-left: 0.6rem;
   border-radius: 10rem;
+}
+
+:host(.default) {
+  background: #818a91;
+  color: #fff;
+}
+
+:host(.outline) {
+  border: 1px solid #ddd;
+  color: #aaa;
 }
