@@ -13,5 +13,5 @@ import { Article } from '../model/article';
 export class ArticleListComponent {
   @HostBinding('class') class = 'article-list';
   @Input({ required: true })
-  articles!: Article[];
+  articles!: Article[] | null;
 }

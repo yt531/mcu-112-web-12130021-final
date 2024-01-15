@@ -11,6 +11,6 @@ import { NgFor } from '@angular/common';
 })
 export class TagListComponent {
   @HostBinding('class') class = 'tag-list';
-  @Input() tags!: string[];
+  @Input() tags!: string[] | null;
   @Input() className!: string;
 }

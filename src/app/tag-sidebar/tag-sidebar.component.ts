@@ -1,14 +1,17 @@
-import { Component, HostBinding } from '@angular/core';
+import { TagService } from './../services/tag.service';
+import { AsyncPipe } from '@angular/common';
+import { Component, HostBinding, inject } from '@angular/core';
 import { TagListComponent } from '../tag-list/tag-list.component';
 
 @Component({
   selector: 'app-tag-sidebar',
   standalone: true,
-  imports: [TagListComponent],
+  imports: [AsyncPipe, TagListComponent],
   templateUrl: './tag-sidebar.component.html',
   styleUrl: './tag-sidebar.component.css',
 })
 export class TagSidebarComponent {
+  private readonly tagService = inject(TagService);
   @HostBinding('class') class = 'tag-sidebar';
-  tags = ['enim', 'repellat', 'est', 'eos'];
+  tags$ = this.tagService.getList();
 }
