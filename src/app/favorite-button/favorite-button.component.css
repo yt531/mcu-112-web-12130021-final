@@ -1,0 +1,12 @@
+button {
+  border: 1px solid #5cb85c;
+  border-radius: 0.2rem;
+  padding: 0.25rem 0.5rem;
+  color: #5cb85c;
+  background-color: transparent;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+}
