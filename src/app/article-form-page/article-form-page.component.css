@@ -6,6 +6,13 @@ div.form {
   gap: 10px;
 }
 
+div.error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: -10px;
+  margin-left: 10px;
+}
+
 input,
 textarea {
   margin: 0;

@@ -1,5 +1,5 @@
 import { ArticleService } from './../services/article.service';
-import { JsonPipe } from '@angular/common';
+import { NgIf } from '@angular/common';
 import { IArticleForm } from './../interface/article-form.interface';
 import { Component, inject } from '@angular/core';
 import {
@@ -15,7 +15,7 @@ import { Article } from '../model/article';
 @Component({
   selector: 'app-article-form-page',
   standalone: true,
-  imports: [JsonPipe, ReactiveFormsModule],
+  imports: [NgIf, ReactiveFormsModule],
   templateUrl: './article-form-page.component.html',
   styleUrl: './article-form-page.component.css',
 })
@@ -23,7 +23,9 @@ export class ArticleFormPageComponent {
   private readonly articleService = inject(ArticleService);
   private router = inject(Router);
   readonly form = new FormGroup<IArticleForm>({
-    title: new FormControl<string | null>(null),
+    title: new FormControl<string | null>(null, {
+      validators: [Validators.required],
+    }),
     description: new FormControl<string | null>(null),
     content: new FormControl<string | null>(null, {
       validators: [Validators.required],
