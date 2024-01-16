@@ -6,7 +6,7 @@ div.form {
   gap: 10px;
 }
 
-div.error-message {
+.error-message {
   color: red;
   font-size: 0.8rem;
   margin-top: -10px;
@@ -27,6 +27,34 @@ textarea {
   padding: 0.75rem 1.5rem;
   font-size: 1.25rem;
   border-radius: 0.3rem;
+}
+
+div.tags button {
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  border-radius: 0.3rem;
+  background: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+div.tags button.add {
+  color: #5cb85c;
+  border: 1px solid #5cb85c;
+}
+
+div.tags button.remove {
+  color: red;
+  border: 1px solid red;
+  margin-right: 15px;
+}
+
+div.tag {
+  margin-top: 10px;
+}
+
+div.tag input {
+  width: 200px;
 }
 
 div.button {

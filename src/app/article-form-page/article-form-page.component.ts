@@ -1,5 +1,5 @@
 import { ArticleService } from './../services/article.service';
-import { NgIf } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 import { IArticleForm } from './../interface/article-form.interface';
 import { Component, inject } from '@angular/core';
 import {
@@ -15,7 +15,7 @@ import { Article } from '../model/article';
 @Component({
   selector: 'app-article-form-page',
   standalone: true,
-  imports: [NgIf, ReactiveFormsModule],
+  imports: [NgIf, NgFor, ReactiveFormsModule],
   templateUrl: './article-form-page.component.html',
   styleUrl: './article-form-page.component.css',
 })
@@ -57,6 +57,14 @@ export class ArticleFormPageComponent {
 
   get tags(): FormArray<FormControl<string | null>> {
     return this.form.get('tags') as FormArray<FormControl<string | null>>;
+  }
+
+  onAddTag(): void {
+    this.tags.push(
+      new FormControl<string | null>(null, {
+        validators: [Validators.required],
+      })
+    );
   }
 
   onSave(): void {
