@@ -1,9 +1,23 @@
-<div class="form">
-  <input type="text" class="form-input-lg" placeholder="Article Title" />
-  <input type="text" placeholder="What's this article about?" />
-  <textarea rows="8" placeholder="Write your article (in markdown)"></textarea>
+<div class="form" [formGroup]="form">
+  <input
+    type="text"
+    class="form-input-lg"
+    placeholder="Article Title"
+    formControlName="title"
+  />
+  <input
+    type="text"
+    placeholder="What's this article about?"
+    formControlName="description"
+  />
+  <textarea
+    rows="8"
+    placeholder="Write your article (in markdown)"
+    formControlName="content"
+  ></textarea>
   <div class="tags"></div>
   <div class="button">
     <button type="button">Publish Article</button>
   </div>
 </div>
+<pre>{{ form.value }}</pre>
