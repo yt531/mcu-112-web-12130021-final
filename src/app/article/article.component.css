@@ -74,7 +74,7 @@ div.footer {
   align-items: center;
 }
 
-div.footer > span {
+div.footer > a {
   color: #bbb;
   font-size: 0.8rem;
   font-weight: 300;

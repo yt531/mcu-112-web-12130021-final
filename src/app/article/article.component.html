@@ -16,6 +16,6 @@
   <p>{{ article.description }}</p>
 </div>
 <div class="footer">
-  <span>Read more...</span>
+  <a [routerLink]="['../', 'article', 'content', article.id]">Read more...</a>
   <app-tag-list className="outline" [tags]="article.tags"></app-tag-list>
 </div>
