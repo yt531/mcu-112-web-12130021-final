@@ -3,28 +3,22 @@
     {
       "id": 1,
       "title": "Ill quantify the redundant TCP bus, that should hard drive the ADP bandwidth!",
-      "content": "\n Aut facilis qui. Cupiditate sit ratione eum sunt rerum impedit. Qui suscipit debitis et et voluptates voluptatem voluptatibus. Quas voluptatum quae corporis corporis possimus.",
+      "description": "\n Aut facilis qui. Cupiditate sit ratione eum sunt rerum impedit. Qui suscipit debitis et et voluptates voluptatem voluptatibus. Quas voluptatum quae corporis corporis possimus.",
+      "content": null,
       "favoriteCount": 30,
       "author": "Maksim Esteban",
       "createDate": "2024-07-03T16:00:00.000Z",
-      "tags": [
-        "enim",
-        "repellat",
-        "est",
-        "eos"
-      ]
+      "tags": ["enim", "repellat", "est", "eos"]
     },
     {
       "id": 2,
       "title": "這是期末作業啊",
-      "content": "這是一個要寫網頁的期末作業啊啊，沒辦法我是學生嘛",
+      "description": "這是一個要寫網頁的期末作業啊啊，沒辦法我是學生嘛",
+      "content": null,
       "favoriteCount": 30,
       "author": "Jeff",
       "createDate": "2024-07-03T16:00:00.000Z",
-      "tags": [
-        "mcu",
-        "angular"
-      ]
+      "tags": ["mcu", "angular"]
     },
     {
       "title": "新增文章",
@@ -37,12 +31,5 @@
       "id": 3
     }
   ],
-  "tags": [
-    "enim",
-    "repellat",
-    "est",
-    "eos",
-    "mcu",
-    "angular"
-  ]
+  "tags": ["enim", "repellat", "est", "eos", "mcu", "angular"]
 }
