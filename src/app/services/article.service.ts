@@ -13,4 +13,7 @@ export class ArticleService {
     const url = author ? `${this.url}?author=${author}` : this.url;
     return this.httpClient.get<Article[]>(url);
   }
+  add(article: Article): Observable<Article> {
+    return this.httpClient.post<Article>(this.url, article);
+  }
 }

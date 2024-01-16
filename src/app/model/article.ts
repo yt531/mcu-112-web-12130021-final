@@ -1,4 +1,3 @@
-import { FavoriteButtonComponent } from './../favorite-button/favorite-button.component';
 export class Article {
   constructor(initDate?: Partial<Article>) {
     Object.assign(this, initDate);

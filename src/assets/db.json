@@ -7,7 +7,12 @@
       "favoriteCount": 30,
       "author": "Maksim Esteban",
       "createDate": "2024-07-03T16:00:00.000Z",
-      "tags": ["enim", "repellat", "est", "eos"]
+      "tags": [
+        "enim",
+        "repellat",
+        "est",
+        "eos"
+      ]
     },
     {
       "id": 2,
@@ -16,8 +21,28 @@
       "favoriteCount": 30,
       "author": "Jeff",
       "createDate": "2024-07-03T16:00:00.000Z",
-      "tags": ["mcu", "angular"]
+      "tags": [
+        "mcu",
+        "angular"
+      ]
+    },
+    {
+      "title": "新增文章",
+      "description": "新增文章",
+      "content": null,
+      "favoriteCount": 0,
+      "author": "Jeff",
+      "createDate": "2024-01-16T10:17:10.640Z",
+      "tags": [],
+      "id": 3
     }
   ],
-  "tags": ["enim", "repellat", "est", "eos", "mcu", "angular"]
+  "tags": [
+    "enim",
+    "repellat",
+    "est",
+    "eos",
+    "mcu",
+    "angular"
+  ]
 }
